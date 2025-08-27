@@ -81,7 +81,7 @@ export default function Page() {
         <section className="flex items-start justify-between">
           <header>
             <h2 className="font-medium text-slate-900">Accent color</h2>
-            <p className="text-sm text-slate-500">Pick your platform's main color</p>
+            <p className="text-sm text-slate-500">Pick your platform&apos;s main color</p>
           </header>
           <div className="flex gap-3">
             <span className="h-6 w-6 rounded-full bg-amber-400 ring-2 ring-indigo-500 ring-offset-2 shadow-sm"></span>
