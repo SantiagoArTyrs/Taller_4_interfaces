@@ -27,7 +27,7 @@ export default function Page() {
 
       <p className="mt-3 text-[15px] text-slate-500">
         If you are the sort of person who just can not keep a plant alive, you are not alone
-        according to a new study published June 10 in the journal Nature..
+        according to a new study published June 10 in the journal HOLIIIIIIS
       </p>
 
       {/* Autor */}
