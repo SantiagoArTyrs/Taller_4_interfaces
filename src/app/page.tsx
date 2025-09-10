@@ -3,7 +3,7 @@ export default function Page() {
     <main className="min-h-screen bg-slate-100 p-6 md:p-10">
       <div className="mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-12 gap-6">
 
-        {/* ===== Top Feature + Categories ===== */}
+        {/*Main */}
         <article className="md:col-span-10 relative bg-white rounded-2xl shadow-lg p-5 md:p-6 w-255">
   <div className="grid grid-cols-1 md:grid-cols-7 gap-6 items-center">
     {/* Imagen */}
@@ -45,7 +45,7 @@ export default function Page() {
     </div>
   </div>
 
-  {/* Botón compartir flotante abajo-derecha */}
+  {/* Botón abajo derecha */}
   <button
     className="absolute right-6 bottom-6 h-9 w-9 rounded-full bg-slate-100 ring-1 ring-slate-200 flex items-center justify-center"
     aria-label="Share"
@@ -57,9 +57,10 @@ export default function Page() {
 </article>
 
 
-        {/* Categories */}
+        {/* Categorias */}
 <aside className="md:col-span-2 md:col-start-11 bg-white rounded-2xl shadow-lg p-4">
   <ul className="space-y-4">
+
     {/* Global */}
     <li className="flex items-center gap-3 p-2">
       <span className="h-10 w-10 rounded-lg bg-slate-100 flex items-center justify-center">
@@ -70,7 +71,7 @@ export default function Page() {
       <span className="text-slate-500">Global</span>
     </li>
 
-    {/* Business (stacked squares) */}
+    {/* Business*/}
     <li className="flex items-center gap-3 p-2">
       <span className="h-10 w-10 rounded-lg bg-slate-100 flex items-center justify-center">
         <svg className="h-5 w-5 text-slate-400" viewBox="0 0 24 24" fill="currentColor">
@@ -82,7 +83,7 @@ export default function Page() {
       <span className="text-slate-500">Business</span>
     </li>
 
-    {/* Entertainment (play outline) */}
+    {/* Entertainment*/}
     <li className="flex items-center gap-3 p-2">
       <span className="h-10 w-10 rounded-lg bg-slate-100 flex items-center justify-center">
         <svg className="h-5 w-5 text-slate-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -92,9 +93,10 @@ export default function Page() {
       <span className="text-slate-500">Entertainment</span>
     </li>
 
-    {/* Sports (selected) */}
+    {/* Sports*/}
     <li className="flex items-center gap-3 p-2">
       <span className="h-10 w-10 rounded-lg bg-indigo-600 flex items-center justify-center">
+
         {/* icono blanco dentro del cuadrado azul */}
         <svg className="h-5 w-5 text-white" viewBox="0 0 24 24" fill="currentColor">
           <path d="M7 5h10a2 2 0 0 1 2 2v10l-5-3-5 3V7a2 2 0 0 1 2-2z" />
@@ -103,7 +105,7 @@ export default function Page() {
       <span className="text-slate-900 font-medium">Sports</span>
     </li>
 
-    {/* Health (dumbbell) */}
+    {/* Health*/}
     <li className="flex items-center gap-3 p-2">
       <span className="h-10 w-10 rounded-lg bg-slate-100 flex items-center justify-center">
         <svg className="h-5 w-5 text-slate-400" viewBox="0 0 24 24" fill="currentColor">
@@ -117,7 +119,7 @@ export default function Page() {
   </ul>
 </aside>
 
-
+        {/* Cafe */}
         
         <article className="md:col-span-4 md:col-start-1 md:row-start-2 bg-white rounded-2xl shadow-lg overflow-hidden">
           <div className="aspect-[16/11] bg-slate-200">
@@ -145,7 +147,7 @@ export default function Page() {
           </div>
         </article>
 
-        {/* Search (centro arriba) */}
+        {/* Search*/}
         <section className="md:col-span-4 md:col-start-5 md:row-start-2 bg-white rounded-2xl shadow-lg h-30 p-4">
           <div className="flex items-center gap-3">
             <input
@@ -170,7 +172,7 @@ export default function Page() {
           </div>
         </section>
 
-        {/* Short film (derecha arriba) */}
+        {/* Short film */}
         <article className="md:col-span-4 md:col-start-9 md:row-start-2 bg-white rounded-2xl shadow-lg h-30 p-4">
           <div className="grid grid-cols-[96px_1fr] gap-4 items-center">
             <div className="h-20 rounded-xl overflow-hidden bg-slate-200">
@@ -200,7 +202,7 @@ export default function Page() {
           </div>
         </article>
 
-        {/* Alex Morrison (fila 2, izquierda) */}
+        {/* Alex Morrison */}
         <section className="md:col-span-8 md:col-start-5 md:row-start-3 bg-white rounded-2xl shadow-lg p-6 -mt-78 h-72 w-150">
           <div className="grid grid-cols-[260px_1fr] gap-6 items-center">
             <div className="h-44 rounded-2xl overflow-hidden bg-slate-200">
@@ -241,7 +243,7 @@ export default function Page() {
           </div>
         </section>
 
-        {/* Flechas (fila 2, centro-dcha) */}
+        {/* Flechas*/}
         <div className="md:col-start-11 md:col-span-2 flex items-center justify-center gap-6 -mt-150">
           <button className="h-14 w-14 rounded-full bg-white shadow-lg flex items-center justify-center" aria-label="Prev">
             <svg viewBox="0 0 24 24" className="h-5 w-5 text-slate-600" fill="none" stroke="currentColor" strokeWidth="2">
@@ -255,7 +257,7 @@ export default function Page() {
           </button>
         </div>
 
-        {/* Tags (fila 2, derecha) */}
+        {/* Tags  */}
         <section className="md:col-start-11 md:col-span-2 bg-white rounded-2xl shadow-lg p-4 -mt-59 h-40">
           <div className="flex flex-wrap gap-3">
             <span className="px-3 py-1 rounded-full bg-slate-50 border border-slate-200 text-slate-700 text-sm">
