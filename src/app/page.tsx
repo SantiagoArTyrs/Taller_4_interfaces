@@ -27,7 +27,7 @@ export default function Page() {
 
       <p className="mt-3 text-[15px] text-slate-500">
         If you are the sort of person who just can not keep a plant alive, you are not alone
-        according to a new study published June 10 in the journal HOLIIIIIIS
+        according to a new study published June 10 in the journal Nature...
       </p>
 
       {/* Autor */}
@@ -119,20 +119,19 @@ export default function Page() {
 
 
         
-        {/* Coffee card */}
-        <article className="md:col-span-4 bg-white rounded-2xl shadow-lg overflow-hidden">
-          <div className="h-48 bg-slate-200">
+        <article className="md:col-span-4 md:col-start-1 md:row-start-2 bg-white rounded-2xl shadow-lg overflow-hidden">
+          <div className="aspect-[16/11] bg-slate-200">
             <img
               src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?q=80&w=1600&auto=format&fit=crop"
               alt="Coffee"
               className="h-full w-full object-cover"
             />
           </div>
-          <div className="p-5">
-            <h3 className="text-lg font-semibold text-slate-900">
+          <div className="p-6">
+            <h3 className="text-xl font-semibold leading-snug">
               How to make the perfect morning coffee, according to the Science
             </h3>
-            <div className="mt-5 flex items-center gap-3">
+            <div className="mt-4 flex items-center gap-3">
               <img
                 className="h-8 w-8 rounded-full"
                 src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?q=80&w=200&auto=format&fit=crop"
@@ -146,41 +145,42 @@ export default function Page() {
           </div>
         </article>
 
-        {/* Search card */}
-        <section className="md:col-span-4 bg-white rounded-2xl shadow-lg h-30 p-4">
+        {/* Search (centro arriba) */}
+        <section className="md:col-span-4 md:col-start-5 md:row-start-2 bg-white rounded-2xl shadow-lg h-30 p-4">
           <div className="flex items-center gap-3">
             <input
               type="text"
               placeholder="Search for articles"
-              className="flex-1 rounded-xl border border-slate-200 px-4 py-3 text-slate-700 placeholder-slate-400"
+              className="flex-1 h-12 rounded-xl border border-slate-200 px-4 text-slate-700 placeholder-slate-400 bg-white focus:outline-none focus:ring-2 focus:ring-indigo-200"
             />
-            <button className="h-12 w-12 rounded-xl bg-indigo-500 text-white flex items-center justify-center" aria-label="Search">
-              <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <circle cx="11" cy="11" r="7" />
-                <path d="M21 21l-4.3-4.3" />
+            <button
+              className="h-12 w-12 rounded-xl bg-indigo-500 hover:bg-indigo-600 text-white flex items-center justify-center"
+              aria-label="Search"
+            >
+              <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M10 3a7 7 0 105.3 12l4.6 4.6 1.4-1.4-4.6-4.6A7 7 0 0010 3zm0 2a5 5 0 110 10 5 5 0 010-10z" />
               </svg>
             </button>
           </div>
-
-          <div className="mt-4 flex flex-wrap gap-5 text-sm">
-            <span className="text-slate-500">#Politics</span>
-            <span className="text-slate-500">#Science</span>
-            <span className="text-slate-500">#Movies</span>
-            <span className="text-slate-500">#Technology</span>
+          <div className="mt-4 flex flex-wrap gap-10 text-sm text-slate-500">
+            <span>#Politics</span>
+            <span>#Science</span>
+            <span>#Movies</span>
+            <span>#Technology</span>
           </div>
         </section>
 
-        {/* Short film card */}
-        <article className="md:col-span-4 bg-white rounded-2xl shadow-lg h-30 p-4">
-          <div className="grid grid-cols-5 gap-4 items-center">
-            <div className="col-span-2 h-24 rounded-xl overflow-hidden bg-slate-200">
+        {/* Short film (derecha arriba) */}
+        <article className="md:col-span-4 md:col-start-9 md:row-start-2 bg-white rounded-2xl shadow-lg h-30 p-4">
+          <div className="grid grid-cols-[96px_1fr] gap-4 items-center">
+            <div className="h-20 rounded-xl overflow-hidden bg-slate-200">
               <img
                 src="https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?q=80&w=1200&auto=format&fit=crop"
                 alt="Building"
                 className="h-full w-full object-cover"
               />
             </div>
-            <div className="col-span-3">
+            <div>
               <div className="flex items-center gap-2">
                 <span className="h-6 w-6 rounded-full border border-indigo-200 text-indigo-500 flex items-center justify-center">
                   <svg className="h-3 w-3" viewBox="0 0 24 24" fill="currentColor">
@@ -189,7 +189,7 @@ export default function Page() {
                 </span>
                 <p className="font-medium text-slate-900">An Inspiring Short Film</p>
               </div>
-              <div className="mt-3 flex items-center gap-2 text-slate-500 text-sm">
+              <div className="mt-2 flex items-center gap-2 text-slate-500 text-sm">
                 <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <path d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
                   <path d="M2.05 12a9.94 9.94 0 0 1 19.9 0 9.94 9.94 0 0 1-19.9 0Z" />
@@ -200,60 +200,64 @@ export default function Page() {
           </div>
         </article>
 
-        {/* ===== Bottom row: Profile + Arrows + Tags ===== */}
-        <section className="md:col-span-8 md:col-start-5 md:row-start-2 bg-white rounded-2xl shadow-lg p-4 h-90 md:p-6">
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-4 items-center">
-            <div className="md:col-span-2 h-40 rounded-xl overflow-hidden bg-slate-200">
+        {/* Alex Morrison (fila 2, izquierda) */}
+        <section className="md:col-span-8 md:col-start-5 md:row-start-3 bg-white rounded-2xl shadow-lg p-6 -mt-78 h-72 w-150">
+          <div className="grid grid-cols-[260px_1fr] gap-6 items-center">
+            <div className="h-44 rounded-2xl overflow-hidden bg-slate-200">
               <img
                 src="https://images.unsplash.com/photo-1531891437562-4301cf35b7e4?q=80&w=1200&auto=format&fit=crop"
                 alt="Alex"
                 className="h-full w-full object-cover"
               />
             </div>
-            <div className="md:col-span-3">
-              <h3 className="text-2xl font-semibold text-slate-900">Alex Morrison</h3>
+            <div>
+              <h3 className="text-2xl font-semibold">Alex Morrison</h3>
               <p className="text-slate-500">Senior Journalist</p>
 
-              <div className="mt-4 grid grid-cols-3 gap-3">
-                <div className="rounded-xl border border-slate-200 p-3 text-center">
+              <div className="mt-4 grid grid-cols-3 gap-4">
+                <div className="rounded-xl border border-slate-200 bg-white p-4 text-center">
                   <p className="text-xs text-slate-500">Articles</p>
-                  <p className="text-lg font-semibold text-slate-900">34</p>
+                  <p className="text-xl font-semibold text-slate-900">34</p>
                 </div>
-                <div className="rounded-xl border border-slate-200 p-3 text-center">
+                <div className="rounded-xl border border-slate-200 bg-white p-4 text-center">
                   <p className="text-xs text-slate-500">Followers</p>
-                  <p className="text-lg font-semibold text-slate-900">980</p>
+                  <p className="text-xl font-semibold text-slate-900">980</p>
                 </div>
-                <div className="rounded-xl border border-slate-200 p-3 text-center">
+                <div className="rounded-xl border border-slate-200 bg-white p-4 text-center">
                   <p className="text-xs text-slate-500">Rating</p>
-                  <p className="text-lg font-semibold text-slate-900">8.9</p>
+                  <p className="text-xl font-semibold text-slate-900">8.9</p>
                 </div>
               </div>
 
               <div className="mt-4 flex items-center gap-3">
-                <button className="px-4 py-2 rounded-xl border border-slate-200 text-slate-700">Chat</button>
-                <button className="px-5 py-2 rounded-xl bg-indigo-600 text-white">Follow</button>
+                <button className="px-4 py-2 rounded-xl border border-slate-200 text-slate-700">
+                  Chat
+                </button>
+                <button className="px-5 py-2 rounded-xl bg-indigo-600 text-white">
+                  Follow
+                </button>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Arrows */}
-        <div className="md:col-span-2 flex items-center justify-center gap-4">
-          <button className="h-12 w-12 rounded-full bg-white shadow-md flex items-center justify-center" aria-label="Prev">
+        {/* Flechas (fila 2, centro-dcha) */}
+        <div className="md:col-start-11 md:col-span-2 flex items-center justify-center gap-6 -mt-150">
+          <button className="h-14 w-14 rounded-full bg-white shadow-lg flex items-center justify-center" aria-label="Prev">
             <svg viewBox="0 0 24 24" className="h-5 w-5 text-slate-600" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M15 6l-6 6 6 6" />
             </svg>
           </button>
-          <button className="h-12 w-12 rounded-full bg-white shadow-md flex items-center justify-center" aria-label="Next">
+          <button className="h-14 w-14 rounded-full bg-white shadow-lg flex items-center justify-center" aria-label="Next">
             <svg viewBox="0 0 24 24" className="h-5 w-5 text-slate-600" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M9 18l6-6-6-6" />
             </svg>
           </button>
         </div>
 
-        {/* Tag chips */}
-        <section className="md:col-span-2 bg-white rounded-2xl shadow-lg p-4">
-          <div className="flex flex-wrap gap-2">
+        {/* Tags (fila 2, derecha) */}
+        <section className="md:col-start-11 md:col-span-2 bg-white rounded-2xl shadow-lg p-4 -mt-59 h-40">
+          <div className="flex flex-wrap gap-3">
             <span className="px-3 py-1 rounded-full bg-slate-50 border border-slate-200 text-slate-700 text-sm">
               Donald Trump
             </span>
